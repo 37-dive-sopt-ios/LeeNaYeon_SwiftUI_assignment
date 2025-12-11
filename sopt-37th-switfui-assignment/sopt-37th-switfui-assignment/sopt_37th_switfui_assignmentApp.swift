@@ -11,7 +11,7 @@ import SwiftUI
 struct sopt_37th_switfui_assignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BaeminMainView()
         }
     }
 }
