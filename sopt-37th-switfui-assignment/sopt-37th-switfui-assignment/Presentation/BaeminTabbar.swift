@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BaeminTabbar: View {
     init() {
+        UITabBar.appearance().backgroundColor = .baeminWhite
         UITabBar.appearance().unselectedItemTintColor = .baeminGray700
     }
     
