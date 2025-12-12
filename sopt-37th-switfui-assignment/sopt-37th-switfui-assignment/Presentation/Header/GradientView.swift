@@ -28,7 +28,3 @@ struct GradientView: View {
         .frame(height: 77)
     }
 }
-
-#Preview {
-    GradientView()
-}
