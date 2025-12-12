@@ -32,9 +32,18 @@ struct RecentDiscountCell: View {
                 
                 HStack {
                     Text("\(data.title)")
-                    Image(.star)
-                        .frame(width: 11, height: 10)
-                    Text("\(data.star)")
+                    Spacer()
+                    HStack (spacing: 2) {
+                        Image(.star)
+                            .frame(width: 11, height: 10)
+                        Text("\(data.star)")
+                        
+                        if let review = data.reviewCount {
+                            Text("(\(review))")
+                                .font(.body_r_14)
+                                .foregroundStyle(.baeminGray600)
+                        }
+                    }
                 }
                 .font(.head_b_14)
                 
